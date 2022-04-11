@@ -11,6 +11,8 @@ namespace JenkinsFastLaneTestApp
             InitializeComponent();
 
             MainPage = new MainPage();
+
+            //test
         }
 
         protected override void OnStart()
