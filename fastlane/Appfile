@@ -1,4 +1,4 @@
-# app_identifier("[[com.xamarin.JenkinsFastLaneTestApp]]") # The bundle identifier of your app
+# app_identifier("[[com.xamarin.JenkinsFastLaneTestAp]]") # The bundle identifier of your app
 # apple_id("[[susingh@dminc.com]]") # Your Apple email address
 
 
