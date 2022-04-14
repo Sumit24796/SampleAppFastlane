@@ -19,6 +19,7 @@ platform :ios do
   lane :generate_ipa_develop do
   get_certificates           # invokes cert
   get_provisioning_profile   # invokes sigh
+  username: "your_account_you_want_to_publish_the_build"
   build_app
     build_ios_app(
       configuration: "Release",
