@@ -13,13 +13,12 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-
 default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :generate_ipa_develop do
     build_ios_app(
-      configuration: "Debug",
+      configuration: "Release",
       scheme: "Test",
       clean: true,
       export_method: 'development',
