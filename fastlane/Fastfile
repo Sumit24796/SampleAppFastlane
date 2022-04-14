@@ -18,7 +18,6 @@ platform :ios do
   desc "Description of what the lane does"
   lane :generate_ipa_develop do
 get_certificates(
-  distribution: true,
   username: "susingh@dminc.com"
 )
   get_provisioning_profile   # invokes sigh
