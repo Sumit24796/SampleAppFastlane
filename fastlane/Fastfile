@@ -16,12 +16,7 @@
 default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
-  lane :generate_ipa_develop do
-get_certificates(
-  username: "susingh@dminc.com"
-)
-  get_provisioning_profile   # invokes sigh
-  
+  lane :generate_ipa_develop do  
   build_app
     build_ios_app(
       configuration: "Release",
