@@ -17,9 +17,12 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :generate_ipa_develop do
-  get_certificates           # invokes cert
+get_certificates(
+  distribution: true,
+  username: "susingh@dminc.com"
+)
   get_provisioning_profile   # invokes sigh
-  fastlane cert --username 'susingh@dminc.com'
+  
   build_app
     build_ios_app(
       configuration: "Release",
