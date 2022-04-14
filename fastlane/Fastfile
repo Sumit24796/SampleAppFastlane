@@ -18,8 +18,7 @@ platform :ios do
   desc "Description of what the lane does"
   lane :generate_ipa_develop do
 get_certificates(
-  username: "susingh@dminc.com",
-  passward: "dminc@1178"
+  username: "susingh@dminc.com"
 )
   get_provisioning_profile   # invokes sigh
   
