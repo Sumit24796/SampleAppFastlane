@@ -21,6 +21,11 @@ platform :ios do
 keychain_path:"/Users/susingh/Library/Keychains/login.keychain-db",
 keychain_password:"dminc@1178"
 )
+get_provisioning_profile(
+  adhoc: true,
+  force: true,
+  filename: "71abf8e4-d402-44b6-8591-04a1ccc1b803.mobileprovision"
+)
   build_app
     build_ios_app(
       configuration: "Release",
