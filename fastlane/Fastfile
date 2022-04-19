@@ -20,7 +20,7 @@ platform :ios do
 get_certificates(
 	keychain_path:"/Users/sagarpanwala/Library/Keychains/login.keychain-db",
 	keychain_password:"1234",
-  generate_apple_certs : "false",
+  generate_apple_certs:"false"
 )
 get_provisioning_profile(
   adhoc: true,
