@@ -32,7 +32,6 @@ get_provisioning_profile(
       scheme: "Test",
       clean: true,
       export_method: 'development',
-      output_directory: "~/Desktop", # Destination directory. Defaults to current directory.
       output_name: "JenkinsFastLaneTestApp.iOS.ipa",
 archive: true)
   end
