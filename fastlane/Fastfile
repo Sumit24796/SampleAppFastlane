@@ -17,9 +17,9 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :generate_ipa_develop do 
-  get_certificates(
-keychain_path:"/Users/susingh/Library/Keychains/login.keychain-db",
-keychain_password:"dminc@1178"
+get_certificates(
+	keychain_path:"/Users/sagarpanwala/Library/Keychains/login.keychain-db",
+	keychain_password:"1234"
 )
 get_provisioning_profile(
   adhoc: true,
