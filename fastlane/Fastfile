@@ -19,20 +19,21 @@ platform :ios do
   lane :generate_ipa_develop do 
 get_certificates(
 	keychain_path:"/Users/sagarpanwala/Library/Keychains/login.keychain-db",
-	keychain_password:"1234"
+	keychain_password:"1234",
+  generate_apple_certs : "false",
 )
 get_provisioning_profile(
   adhoc: true,
-  force: true,
+  force: false,
   filename: "71abf8e4-d402-44b6-8591-04a1ccc1b803.mobileprovision"
 )
-  build_app
-   gym(
+  build_app(
       configuration: "Release",
       scheme: "Test",
       clean: true,
       export_method: 'development',
       output_name: "JenkinsFastLaneTestApp.iOS.ipa",
-archive: true)
+	  archive: true
+  )
   end
 end
